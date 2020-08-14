@@ -1,1 +1,7 @@
 # documentation
+
+## talks
+![Micro Frontend Architecture - Luca Mezzalira, DAZN](https://martinfowler.com/articles/micro-frontends.html)
+
+## tools
+![Single SPA JS](https://single-spa.js.org/)
