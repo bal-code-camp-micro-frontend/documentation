@@ -1,7 +1,7 @@
 # documentation
 
 ## talks
-- [Micro Frontend Architecture - Luca Mezzalira, DAZN](https://martinfowler.com/articles/micro-frontends.html)
+- [Micro Frontend Architecture - Luca Mezzalira, DAZN](https://www.youtube.com/watch?v=BuRB3djraeM)
 
 ## articles
 - [Martin Fowler - Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
