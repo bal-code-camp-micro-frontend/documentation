@@ -6,6 +6,10 @@
 
 ## articles
 - [Martin Fowler - Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
+- [micro-frontends.org](https://micro-frontends.org/)
+
+## books
+- [Micro Frontends in Action by Michael Geers](https://www.manning.com/books/micro-frontends-in-action) (to appear in October)
 
 ## tools
 - [Single SPA JS](https://single-spa.js.org/)
