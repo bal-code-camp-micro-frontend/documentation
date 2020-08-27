@@ -19,3 +19,5 @@
 - [Web Components](https://www.youtube.com/watch?v=aJ9vqyWWCOw&list=PLVI0Ut22uwY5n8nKfDZeUb14tNksI4ny4&index=8)
   - [Vue build Web Components](https://cli.vuejs.org/guide/build-targets.html#web-component)
   
+## kurse
+- [Build lightning fast web components apps for any framework](https://www.udemy.com/course/webcomponents-apps/)
