@@ -15,6 +15,6 @@
 - [Single SPA JS](https://single-spa.js.org/)
 - [Frint JS](https://github.com/frintjs/frint)
 - [mosaic9 Zalando](https://www.mosaic9.org/)
-- Web Components
+- [Web Components](https://www.youtube.com/watch?v=aJ9vqyWWCOw&list=PLVI0Ut22uwY5n8nKfDZeUb14tNksI4ny4&index=8)
   - [Vue build Web Components](https://cli.vuejs.org/guide/build-targets.html#web-component)
   
