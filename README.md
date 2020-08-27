@@ -3,6 +3,7 @@
 ## talks
 - [Micro Frontend Architecture - Luca Mezzalira, DAZN](https://www.youtube.com/watch?v=BuRB3djraeM)
 - [SE Radio - Episode 422: Michael Geers on Micro Frontends](https://www.se-radio.net/2020/08/episode-422-michael-geers-on-micro-frontends/)
+- [Frameworks and webcomponents by Filip Bech Larsen](https://www.youtube.com/watch?v=aJ9vqyWWCOw&list=PLVI0Ut22uwY5n8nKfDZeUb14tNksI4ny4&index=8)
 
 ## articles
 - [Martin Fowler - Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
