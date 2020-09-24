@@ -54,7 +54,16 @@ With this configuration we can use the same url for all applications.
 - Client-side composition with web components
 - Performance improvement using ssi for the recommendations skeleton 
 - Shadow dom hides the origin element of an event and returns it self
-- 
+-
+### v3 App Shell as Single Page Application with vanilla js
+- Wrapped 3 developements as Webcomponents
+- "Clck Events" Urls propagation from single developements to upper App Shell
+-
+
+### v4 App Shell as Single Page Application with Single Spa
+- https://single-spa.js.org/
+-
+
 
 
 ## talks
