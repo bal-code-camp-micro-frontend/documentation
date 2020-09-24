@@ -53,6 +53,8 @@ With this configuration we can use the same url for all applications.
 ### v2 Web Components
 - Client-side composition with web components
 - Performance improvement using ssi for the recommendations skeleton 
+- Shadow dom hides the origin element of an event and returns it self
+- 
 
 
 ## talks
