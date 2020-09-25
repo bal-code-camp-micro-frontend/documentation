@@ -13,6 +13,8 @@ The first approach was using direct links from list to the detail page. There wa
 checkout yet.  
 
 ### v1 Server Side Includes
+:link: <https://kwik-e-mart-v1-ssi-proxy.apps.baloise.dev/>
+
 - The list team exposes a recommendations fragment under /l/recommendations/:id
 - The detail page includes recommendations via server side includes:
 ```
@@ -51,11 +53,15 @@ server {
 With this configuration we can use the same url for all applications. 
 
 ### v2 Web Components
+:link: <https://kwik-e-mart-v2-webcomponents-proxy.apps.baloise.dev/>
+
 - Client-side composition with web components
 - Performance improvement using ssi for the recommendations skeleton 
 - Shadow dom hides the origin element of an event and returns it self
 -
 ### v3 App Shell as Single Page Application with vanilla js
+:link: <https://kwik-e-mart-v3-appshell-proxy.apps.baloise.dev/>
+
 - Wrapped 3 developements as Webcomponents
 - "Clck Events" Urls propagation from single developements to upper App Shell
 -
