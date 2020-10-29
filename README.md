@@ -59,14 +59,45 @@ With this configuration we can use the same url for all applications.
 
 #### Example 1: *Add to cart* button:
 
-<span style="color:red">TODO: WebComponent code</span>
+Provider team:
+```javascript
+// /c/components/add-to-cart-button.js
 
+const checkoutShoppingCartTemplate = document.createElement('template');
+checkoutShoppingCartTemplate.innerHTML = `
+  <link href="h/c/components/css/add-to-cart-button.css" rel="stylesheet" />
+  <button>
+    <!-- ... -->
+  </button>
+`;
+
+class CheckoutShoopingCart extends HTMLElement {
+  connectedCallback() {
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(checkoutShoppingCartTemplate.content.cloneNode(true));
+  }
+  /* functionality */
+}
+
+customElements.define('c-shopping-cart', CheckoutShoopingCart);
+```
+
+User team:
 ```html
 <script src="/c/components/add-to-cart-button.js"></script>
 <c-add-to-cart-button product-id="1"></c-add-to-cart-button>
 ```
 
-<span style="color:red">TODO: resulting DOM (with shadow root)</span>
+Resulting DOM:
+```html
+<c-shopping-cart id="1">
+ #shadow-root ==
+ <link href="/c/components/css/add-to-cart-button.css" rel="stylesheet">
+ <button>
+    <!-- ... -->
+  </button>
+</c-shopping-cart>
+```
 
 Conventions to keep things clean:
 - Every team has its own prefix (e.g. team checkout: 'c')
