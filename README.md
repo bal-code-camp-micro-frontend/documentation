@@ -81,7 +81,7 @@ Solution: Use skeletons until the actual content is displayed. The responsibilit
 
 ```html
 <script src="/l/components/recommendations.js"></script>
-<l-recommendations product-id="{{productid}}">
+<l-recommendations product-id="4711">
     <!--#include virtual="/l/skeletons/recommendations" -->
 </l-recommendations>
 ```
@@ -111,7 +111,7 @@ cartChangedEventListener = (e) => {
 }
 ```
 
-**Important**: Only use your team's *global* events. If you need to need to notify the user of one of your web components, make it part of the web component API (e.g. <my-component onSomeEvent="usersHandlerFunc()"></my-component>`)
+**Important**: Only use your team's *global* events. If you need to need to notify the user of one of your web components, make it part of the web component API (e.g. `<my-component onSomeEvent="usersHandlerFunc()"></my-component>`)
 
 ### v3 App Shell as Single Page Application with vanilla js
 :link: <https://kwik-e-mart-v3-appshell-proxy.apps.baloise.dev/>
