@@ -55,9 +55,64 @@ With this configuration we can use the same url for all applications.
 ### v2 Web Components
 :link: <https://kwik-e-mart-v2-webcomponents-proxy.apps.baloise.dev/>
 
-- Client-side composition with web components
-- Performance improvement using ssi for the recommendations skeleton 
--
+-> Client side composition with web components.
+
+#### Example 1: *Add to cart* button:
+
+<span style="color:red">TODO: WebComponent code</span>
+
+```html
+<script src="/c/components/add-to-cart-button.js"></script>
+<c-add-to-cart-button product-id="1"></c-add-to-cart-button>
+```
+
+<span style="color:red">TODO: resulting DOM (with shadow root)</span>
+
+Conventions to keep things clean:
+- Every team has its own prefix (e.g. team checkout: 'c')
+- Every team follows the same path structure for includes etc.
+
+Every user of the `c-add-to-cart-button` now only needs to know that the API of this micro frontend component is the attribute `product-id`.
+
+#### Example 2: *Recommendations* view:
+
+Issue: Visually big web components that need some time to initialize cause the web site flicker.
+Solution: Use skeletons until the actual content is displayed. The responsibility to provide a skeleton that matches the final content is responsibility of the content team. You can e.g. use SSI to include this skeleton before sending the page to the browser.
+
+```html
+<script src="/l/components/recommendations.js"></script>
+<l-recommendations product-id="{{productid}}">
+    <!--#include virtual="/l/skeletons/recommendations" -->
+</l-recommendations>
+```
+
+#### Example 3: Communication between micro frontends of *one* team
+
+```javascript
+// c-add-to-car-button onClick handler:
+this.dispatchEvent(new CustomEvent('c:cart:changed', { // notice the 'c' prefix for team checkout
+  bubbles: true, // bubble all the way to the window element
+  composed: true,
+  detail: { productId: this.productId }
+}));
+```
+```javascript
+// c-shopping-cart:
+connectedCallback() {
+  window.addEventListener('c:cart:changed', this.cartChangedEventListener);
+}
+
+disconnectedCallback() {
+  window.removeEventListener('c:cart:changed', this.cartChangedEventListener);
+}
+
+cartChangedEventListener = (e) => {
+  // update shopping cart count
+}
+```
+
+**Important**: Only use your team's *global* events. If you need to need to notify the user of one of your web components, make it part of the web component API (e.g. <my-component onSomeEvent="usersHandlerFunc()"></my-component>`)
+
 ### v3 App Shell as Single Page Application with vanilla js
 :link: <https://kwik-e-mart-v3-appshell-proxy.apps.baloise.dev/>
 
