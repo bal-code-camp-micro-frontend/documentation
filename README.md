@@ -63,15 +63,15 @@ Provider team:
 ```javascript
 // /c/components/add-to-cart-button.js
 
-const checkoutShoppingCartTemplate = document.createElement('template');
-checkoutShoppingCartTemplate.innerHTML = `
+const checkoutAddToCartButtonTemplate = document.createElement('template');
+checkoutAddToCartButtonTemplate.innerHTML = `
   <link href="h/c/components/css/add-to-cart-button.css" rel="stylesheet" />
   <button>
     <!-- ... -->
   </button>
 `;
 
-class CheckoutShoopingCart extends HTMLElement {
+class CheckoutAddToCartButton extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(checkoutShoppingCartTemplate.content.cloneNode(true));
@@ -79,7 +79,7 @@ class CheckoutShoopingCart extends HTMLElement {
   /* functionality */
 }
 
-customElements.define('c-shopping-cart', CheckoutShoopingCart);
+customElements.define('c-add-to-cart-button', CheckoutAddToCartButton);
 ```
 
 User team:
