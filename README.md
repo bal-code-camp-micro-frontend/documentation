@@ -81,7 +81,7 @@ With this configuration we can use the same url for all applications.
 - [micro-frontends.org](https://micro-frontends.org/)
 
 ## books
-- [Micro Frontends in Action by Michael Geers](https://www.manning.com/books/micro-frontends-in-action) (to appear in October)
+- [Micro Frontends in Action by Michael Geers](https://www.manning.com/books/micro-frontends-in-action)
 
 ## tools
 - [Single SPA JS](https://single-spa.js.org/)
